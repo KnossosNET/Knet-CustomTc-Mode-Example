@@ -23,6 +23,7 @@ In this mode to set the library path, the user will be asked to select a install
 <br />
 <br />
 **Customisations options for custom_launcher.json:**
+<br />
 ```csharp
         /// <summary>
         /// If left empty Knet will try to pick up the "custom_launcher.json" file.
