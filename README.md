@@ -23,6 +23,7 @@ In this mode to set the library path, the user will be asked to select a install
 <br />
 <br />
 **Customisations options for custom_launcher.json:**
+```csharp
         /// <summary>
         /// If left empty Knet will try to pick up the "custom_launcher.json" file.
         /// Change it to a mod id to hardcode SingleTC ON using the default settings se there.
@@ -156,3 +157,10 @@ In this mode to set the library path, the user will be asked to select a install
         /// Icon path follows the same rules as HomeBackgroundImage, so URL, embedded and local images are supported.
         /// </summary>
         public static LinkButton[]? HomeLinkButtons { get; private set; }
+```
+
+<br />
+
+**The HTML Renderer is not a browser**
+<br />
+The HTML renderer is very basic and only be able to do, maybe, HTML4 stuff. Dosent support JS, animated images videos and some stylization things.
