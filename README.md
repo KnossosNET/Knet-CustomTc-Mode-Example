@@ -10,20 +10,21 @@ In this mode to set the library path, the user will be asked to select a install
 <br />
 <br />
 **Features:**
-- Optional Custom FSO Data folder for pilots and FSO settings
-- Disabling Launcher Updates
-- Background image and starting window size
-- Disabling some menu entries
-- Additional Custom CMD for FSO
-- Disable log file
-- Disabling nebula services
-- Configurable html content on Home View
-- Configurable link buttons on Home View
-- Optional additional menu content using HTML
+<br />Optional Custom FSO Data folder for pilots and FSO settings
+<br />Disabling Launcher Updates
+<br />Background image and starting window size
+<br />Disabling some menu entries
+<br />Additional Custom CMD for FSO
+<br />Disable log file
+<br />Disabling nebula services
+<br />Configurable html content on Home View
+<br />Configurable link buttons on Home View
+<br />Optional additional menu content using HTML
 <br />
 <br />
 **Customisations options for custom_launcher.json:**
 <br />
+
 ```csharp
         /// <summary>
         /// If left empty Knet will try to pick up the "custom_launcher.json" file.
