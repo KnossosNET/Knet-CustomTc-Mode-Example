@@ -13,14 +13,14 @@
   "MenuDisplayNebulaLoginEntry" : false,
   "MenuDisplayGlobalSettingsEntry" : false,
   "CustomCmdlineArray": null,
-  "HomeBackgroundImage" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/fs2demobackground.jpg",
-  "HomeWelcomeHtml" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/welcome.html",
+  "HomeBackgroundImage" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/fs2demobackground.jpg",
+  "HomeWelcomeHtml" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/welcome.html",
   "HomeWelcomeMargin" : "50,150,50,0",
   "HomeLinkButtons":[
 		{ "ToolTip":"Visit us at Discord", "IconPath":"avares://Knossos.NET/Assets/general/discordicon.png", "LinkURL":"https://discord.gg/cyhMBhMHzK" },
 		{ "ToolTip":"Knet on GitHub", "IconPath":"https://i.imgur.com/xiVxVe6.png", "LinkURL":"https://github.com/KnossosNET" }
   ],
   "CustomMenuButtons":[
-		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/wiki.html" }
+		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/wiki.html" }
   ]
 }
