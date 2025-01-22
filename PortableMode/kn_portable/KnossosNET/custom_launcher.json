@@ -24,5 +24,6 @@
   ],
   "CustomMenuButtons":[
 		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"wiki.html" }
-  ]
+  ],
+  "HomeButtonConfigs" : null
 }

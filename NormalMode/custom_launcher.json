@@ -11,7 +11,7 @@
   "MenuDisplayDebugEntry" : true,
   "MenuDisplayCommunityEntry" : false,
   "MenuDisplayNebulaLoginEntry" : false,
-  "MenuDisplayGlobalSettingsEntry" : false,
+  "MenuDisplayGlobalSettingsEntry" : true,
   "CustomCmdlineArray": null,
   "HomeBackgroundImage" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/fs2demobackground.jpg",
   "HomeWelcomeHtml" : "https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/welcome.html",
@@ -22,5 +22,8 @@
   ],
   "CustomMenuButtons":[
 		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"https://raw.githubusercontent.com/KnossosNET/Knet-CustomTc-Mode-Example/main/PortableMode/kn_portable/KnossosNET/wiki.html" }
+  ],
+  "HomeButtonConfigs" :[
+		{ "ButtonID" : "ButtonLaunch", "DisplayText" : "Ready", "FontSize" : 18, "ToolTip" : "Launch!", "BackgroundHexColor" : "#54f331", "ForegroundHexColor" : "Black", "BorderHexColer" : "#25fff8" }
   ]
 }
