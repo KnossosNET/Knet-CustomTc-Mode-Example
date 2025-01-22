@@ -1,0 +1,25 @@
+<UserControl 
+	xmlns="https://github.com/avaloniaui" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Background="{StaticResource BackgroundColorPrimary}"
+	xmlns:cvt="clr-namespace:Knossos.NET.Converters;assembly=Knossos.NET">
+
+	<UserControl.Resources>
+		<cvt:TextFileToStringConverter x:Key="textFileConverter"/>
+		<cvt:BitmapAssetValueConverter x:Key="imageConverter"/>
+	</UserControl.Resources>
+	
+	<ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+		<StackPanel HorizontalAlignment="Center" Background="White">
+			<Label Foreground="Black">You can create your own views and add them to the menu</Label>
+			<Image Source="{Binding Converter={StaticResource imageConverter}, ConverterParameter='https://i.imgur.com/BXublDR.jpeg'}"/>
+			<Button Command="{Binding OpenLink}" CommandParameter="https://github.com/KnossosNET/Knossos.NET" Content="External Link"></Button>
+		</StackPanel>
+		
+	</ScrollViewer>
+	
+</UserControl>
+
+

@@ -28,7 +28,7 @@ In this mode to set the library path, the user will be asked to select a install
 ```csharp
         /// <summary>
         /// If left empty Knet will try to pick up the "custom_launcher.json" file.
-        /// Change it to a mod id to hardcode SingleTC ON using the default settings se there.
+        /// Change it to a mod id to hardcode SingleTC ON using the default settings set here.
         /// </summary>
         public static string? ModID { get; private set; } = null;
 
@@ -65,6 +65,12 @@ In this mode to set the library path, the user will be asked to select a install
         /// null for auto
         /// </summary>
         public static int? WindowHeight { get; private set; } = 540;
+
+        /// <summary>
+        /// Configurable option to show the task buttom at the end of the menu buttom list
+        /// instead of at the beginning.
+        /// </summary>
+        public static bool MenuTaskButtonAtTheEnd { get; private set; } = false;
 
         /// <summary>
         /// The first time the user opens the launcher, the main menu should be expanded or collapsed?
@@ -141,6 +147,13 @@ In this mode to set the library path, the user will be asked to select a install
         public static string? HomeBackgroundImage { get; private set; } = "avares://Knossos.NET/Assets/general/custom_home_background.jpg";
 
         /// <summary>
+        /// Change background scretch mode
+        /// Possible Values:
+        /// None, Fill, Uniform, UniformToFill
+        /// </summary>
+        public static string HomeBackgroundStretchMode { get; private set; } = "Fill";
+
+        /// <summary>
         /// Set a path to the welcome HTML message on home screen
         /// Uses the same path rules as HomeBackgroundImage
         /// null to disable or put a path to a empty file if you want to display it at some point
@@ -159,6 +172,12 @@ In this mode to set the library path, the user will be asked to select a install
         /// Icon path follows the same rules as HomeBackgroundImage, so URL, embedded and local images are supported.
         /// </summary>
         public static LinkButton[]? HomeLinkButtons { get; private set; }
+
+        /// <summary>
+        /// Costumisable data for home screen buttons
+        /// Allows to change home buttons display text, color and tooltips
+        /// </summary>
+        public static HomeCustomButtonConfig[]? HomeButtonConfigs { get; private set; }
 ```
 
 <br />
@@ -166,3 +185,36 @@ In this mode to set the library path, the user will be asked to select a install
 **The HTML Renderer is not a browser**
 <br />
 The HTML renderer is very basic and only be able to do, maybe, HTML4 stuff. Dosent support JS, animated images videos and some stylization things.
+
+
+**HomeButtonConfigs, HomeLinkButtons and HomeCustomButtonConfig for custom_launcher.json:**
+<br />
+These types are used for enaling special customisations using the json file, these are their structures
+```csharp
+    public struct LinkButton
+    {
+        public string ToolTip
+        public string IconPath
+        public string LinkURL
+    }
+
+    public struct HomeCustomButtonConfig
+    {
+        public string? ButtonID //ButtonLaunch, ButtonModify, ButtonUpdate, ButtonInstall, ButtonInfo, ButtonDetails, ButtonSettings
+        public string? DisplayText
+        public string? ToolTip
+        public int? FontSize
+        public string? BackgroundHexColor //#CD3632 hex color value
+        public string? ForegroundHexColor
+        public string? BorderHexColer
+    }
+
+    public struct CustomMenuButton
+    {
+        public string Name { get; set; }
+        public string ToolTip { get; set; }
+        public string IconPath { get; set; }
+        public string Type { get; set; } //HtmlContent, AxamlContent
+        public string LinkURL { get; set; } //file name to load the content from, can be a URL
+    }
+```

@@ -3,19 +3,22 @@
   "WindowTitle" : "FS2 Demo Knet Launcher",
   "WindowWidth" : 1024,
   "WindowHeight" : 640,
-  "UseCustomFSODataFolder" : false,
+  "UseCustomFSODataFolder" : true,
   "AllowLauncherUpdates" : true,
   "UseNebulaServices" : true,
   "WriteLogFile" : true,
+  "MenuTaskButtonAtTheEnd" : true,
+  "MenuOpenFirstTime" : false,
   "MenuDisplayEngineEntry" : true,
   "MenuDisplayDebugEntry" : true,
   "MenuDisplayCommunityEntry" : false,
   "MenuDisplayNebulaLoginEntry" : false,
-  "MenuDisplayGlobalSettingsEntry" : false,
+  "MenuDisplayGlobalSettingsEntry" : true,
   "CustomCmdlineArray": [
 		"fps"
   ],
   "HomeBackgroundImage" : "fs2demobackground.jpg",
+  "HomeBackgroundStretchMode" : "UniformToFill",
   "HomeWelcomeHtml" : "welcome.html",
   "HomeWelcomeMargin" : "50,150,50,0",
   "HomeLinkButtons":[
@@ -23,7 +26,10 @@
 		{ "ToolTip":"Knet on GitHub", "IconPath":"https://i.imgur.com/xiVxVe6.png", "LinkURL":"https://github.com/KnossosNET" }
   ],
   "CustomMenuButtons":[
-		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"wiki.html" }
+		{ "Name":"Wiki", "ToolTip":"Fs2 Demo Wiki", "IconPath":"avares://Knossos.NET/Assets/general/questionmark.png", "Type":"HtmlContent", "LinkURL":"wiki.html" },
+		{ "Name":"Your Views", "ToolTip":"Make your own Axamlviews", "IconPath":"avares://Knossos.NET/Assets/general/menu_explore.png", "Type":"AxamlContent",  "LinkURL":"more.txt" }
   ],
-  "HomeButtonConfigs" : null
+  "HomeButtonConfigs" :[
+		{ "ButtonID" : "ButtonLaunch", "DisplayText" : "Ready", "FontSize" : 18, "ToolTip" : "Launch!", "BackgroundHexColor" : "#54f331", "ForegroundHexColor" : "Black", "BorderHexColer" : "#25fff8" }
+  ]
 }
